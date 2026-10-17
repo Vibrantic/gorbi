@@ -125,10 +125,6 @@ stateCheck1 = true or false             #Immutable(Constant) 8bits Boolean
 stateCheck1: bool = true or false       #Immutable(Constant) type assigment to boolean
 ~stateCheck1: bool = true or false      #Mutable(Variable/changeable) type assigment to boolean
 
-# Explicit type assigment
-stateCheck1: bbool = 0 or 1             #Immutable(Constant) 1bit type assigment to boolean
-~stateCheck1: bbool = 0 or 1            #Mutable(Variable/changeable) 1bit type assigment to boolean
-
 # Explicit immutable type assigment
 stateCheck1: bbool1 = 0 or 1            #Immutable(Constant) 1bit Boolean
 stateCheck1: bool8 = true or false      #Immutable(Constant) 8bits Boolean
