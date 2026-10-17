@@ -1,0 +1,146 @@
+/* Whole numbers/integers */
+----------------------------------------------------------------------------------------------------------------------
+#Automatic recognition
+wholeNumber = 32                        #Immutable(Constant) automatically signed and automatic 64bits type assigment to Integer
+~wholeNumber = 32                       #Mutable(Variable/changeable) automatically signed and automatic 64bits type assigment to Integer
+
+# Explicit signed/unsigned and type definition but automatic bits assigment
+wholeNumber: sint = 32                  #Immutable(Constant) signed 64bits Integer Value
+~wholeNumber: sint = 32                 #Mutable(Variable/changeable) signed 64bits Integer Value
+wholeNumber: uint = 32                  #Immutable(Constant) unsigned 64bits Integer Value
+~wholeNumber: uint = 32                 #Mutable(Variable/changeable) unsigned 64bits Integer Value
+
+# Explicit type assigment and automatic bits recognition
+wholeNumber: int = 32                   #Immutable(Constant) automatically signed and explicit type assigment to integer
+~wholeNumber: int = 32                  #Mutable(Variable/changeable) automatically signed and explicit type assigment to integer
+
+# Explicit immutable signed type assigment
+wholeNumber: sint4 = 32                 #Immutable(Constant) signed 4bits Integer Value
+wholeNumber: sint8 = 32                 #Immutable(Constant) signed 8bits Integer Value
+wholeNumber: sint16 = 32                #Immutable(Constant) signed 16bits Integer Value
+wholeNumber: sint32 = 32                #Immutable(Constant) signed 32bits Integer Value
+wholeNumber: sint64 = 32                #Immutable(Constant) signed 64bits Integer Value
+wholeNumber: sint128 = 32               #Immutable(Constant) signed 64bits Integer Value
+
+# Explicit mutable signed type assigment
+~wholeNumber: sint4 = 32                #Mutable(Variable/changeable) signed 4bits Integer Value
+~wholeNumber: sint8 = 32                #Mutable(Variable/changeable) signed 8bits Integer Value
+~wholeNumber: sint16 = 32               #Mutable(Variable/changeable) signed 16bits Integer Value
+~wholeNumber: sint32 = 32               #Mutable(Variable/changeable) signed 32bits Integer Value
+~wholeNumber: sint64 = 32               #Mutable(Variable/changeable) signed 64bits Integer Value
+~wholeNumber: sint128 = 32              #Mutable(Variable/changeable) signed 64bits Integer Value
+
+# Explicit immutable unsigned type assigment
+wholeNumber: uint4 = 32                 #Immutable(Constant) unsigned 4bits Integer Value
+wholeNumber: uint8 = 32                 #Immutable(Constant) unsigned 8bits Integer Value
+wholeNumber: uint6 = 32                 #Immutable(Constant) unsigned 16bits Integer Value
+wholeNumber: uint32 = 32                #Immutable(Constant) unsigned 32bits Integer Value
+wholeNumber: uint64 = 32                #Immutable(Constant) unsigned 64bits Integer Value
+wholeNumber: uint128 = 32               #Immutable(Constant) unsigned 64bits Integer Value
+
+# Explicit mutable unsigned type assigment
+~wholeNumber: uint4 = 32                #Mutable(Variable/changeable) unsigned 4bits Integer Value
+~wholeNumber: uint8 = 32                #Mutable(Variable/changeable) unsigned 8bits Integer Value
+~wholeNumber: uint16 = 32               #Mutable(Variable/changeable) unsigned 16bits Integer Value
+~wholeNumber: uint32 = 32               #Mutable(Variable/changeable) unsigned 32bits Integer Value
+~wholeNumber: uint64 = 32               #Mutable(Variable/changeable) unsigned 64bits Integer Value
+~wholeNumber: uint128 = 32              #Mutable(Variable/changeable) unsigned 64bits Integer Value
+----------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
+
+/* Decimal numbers/float */
+----------------------------------------------------------------------------------------------------------------------
+#Automatic type recognition for signed and unsigned float/decimal numbers
+decimalNumber = 4.58                    #Immutable(Constant) signed 64bits Float Value
+~decimalNumber = 4.58                   #Mutable(Variable/changeable) signed 64bits Float Value
+
+# Explicit type assigment
+decimalNumber: float = 4.58             #Immutable(Constant) type assigment to float
+~decimalNumber: float = 4.58            #Mutable(Variable/changeable) type assigment to float
+
+# Explicit immutable type and bits assigment
+decimalNumber: float32 = 4.58           #Immutable(Constant) 32bits Float Value
+decimalNumber: float64 = 4.58           #Immutable(Constant) 64bits Float Value
+
+# Explicit mutable type and bits assigment
+~decimalNumber: float32 = 4.58          #Mutable(Variable/changeable) 32bits Float Value
+~decimalNumber: float64 = 4.58          #Mutable(Variable/changeable) 64bits Float Value
+----------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
+
+/* Words/Strings */
+----------------------------------------------------------------------------------------------------------------------
+#Automatic type recognition for signed and unsigned strings
+word = "Bob"                            #Immutable(Constant) 64bits String
+~word = "Bob"                           #Mutable(Variable/changeable) 64bits String
+
+# Explicit type assigment
+word: str = "Bob"                       #Immutable(Constant) 64bits type assigment to string
+~word: str = "Bob"                      #Mutable(Variable/changeable) 64bits type assigment to string
+
+# Explicit immutable type size assigment
+word: str32 = "Bob"                     #Immutable(Constant) 32bits String
+word: str64 = "Bob"                     #Immutable(Constant) 64bits String
+
+# Explicit mutable type size assigment
+~word: str32 = "Bob"                    #Mutable(Variable/changeable) 32bits String
+~word: str64 = "Bob"                    #Mutable(Variable/changeable) 64bits String
+
+----------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
+
+/* Character */
+----------------------------------------------------------------------------------------------------------------------
+#Automatic type recognition for signed and unsigned strings
+character = 'A'                         #Immutable(Constant) 64bits Character
+~character = 'A'                        #Mutable(Variable/changeable) 64bits Character
+
+# Explicit type assigment
+character: char = 'A'                   #Immutable(Constant) 64bits type assigment to Character
+~character: char = 'A'                  #Mutable(Variable/changeable) 64bits type assigment to Character
+
+# Explicit immutable type size assigment
+character: char8 = 'A'                  #Immutable(Constant) 8bits Character
+character: char16 = 'A'                 #Immutable(Constant) 16bits Character
+character: char32 = 'A'                 #Immutable(Constant) 32bits Character
+character: char64 = 'A'                 #Immutable(Constant) 64bits Character
+character: char128 = 'A'                #Mutable(Variable/changeable) 64bits Character
+
+# Explicit mutable type size assigment
+~character: char8 = 'A'                 #Mutable(Variable/changeable) 32bits Character
+~character: char16 = 'A'                #Mutable(Variable/changeable) 32bits Character
+~character: char32 = 'A'                #Mutable(Variable/changeable) 32bits Character
+~character: char64 = 'A'                #Mutable(Variable/changeable) 64bits Character
+~character: char128 = 'A'               #Mutable(Variable/changeable) 64bits Character
+
+----------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
+
+/* Check statement boolean */
+----------------------------------------------------------------------------------------------------------------------
+stateCheck1 = true or false             #Immutable(Constant) 8bits Boolean
+~stateCheck1 = true or false            #Mutable(Variable) 8bits Boolean
+
+# Explicit type assigment
+stateCheck1: bool = true or false       #Immutable(Constant) type assigment to boolean
+~stateCheck1: bool = true or false      #Mutable(Variable/changeable) type assigment to boolean
+
+# Explicit type assigment
+stateCheck1: bbool = 0 or 1             #Immutable(Constant) 1bit type assigment to boolean
+~stateCheck1: bbool = 0 or 1            #Mutable(Variable/changeable) 1bit type assigment to boolean
+
+# Explicit immutable type assigment
+stateCheck1: bbool1 = 0 or 1            #Immutable(Constant) 1bit Boolean
+stateCheck1: bool8 = true or false      #Immutable(Constant) 8bits Boolean
+stateCheck1: bool16 = true or false     #Immutable(Constant) 16bits Boolean
+stateCheck1: bool32 = true or false     #Immutable(Constant) 32bits Boolean
+stateCheck1: bool64 = true or false     #Immutable(Constant) 64bits Boolean
+
+# Explicit mutable type assigment
+~stateCheck1: bbool1 = 0 or 1           #Mutable(Variable/changeable) 1bit Boolean
+~stateCheck1: bool8 = true or false     #Mutable(Variable/changeable) 8bits Boolean
+~stateCheck1: bool16 = true or false    #Mutable(Variable/changeable) 16bits Boolean
+~stateCheck1: bool32 = true or false    #Mutable(Variable/changeable) 32bits Boolean
+~stateCheck1: bool64 = true or false    #Mutable(Variable/changeable) 64bits Boolean
+----------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
