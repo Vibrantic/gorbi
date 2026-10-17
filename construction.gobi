@@ -1,0 +1,16 @@
+/* Copyright (C) 2026 Goran Babic
+
+This file is part of the Gorbi Compiler.
+
+The Gorbi Compiler is free software: you can redistribute it and/or
+modify it under the terms of the GNU General Public License as
+published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version. */
+
+a: i32 = 2
+b: i32 = 5
+~c: i32
+
+fn calculate(a: i32, b: i32) -> i32
+    ~c = a + b
+

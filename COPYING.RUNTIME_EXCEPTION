@@ -1,0 +1,43 @@
+GORBI RUNTIME LIBRARY EXCEPTION
+Version 1.0
+
+Additional permission under GPLv3 Section 7.
+
+As a special exception to the GNU General Public License version 3
+(or any later version), the copyright holders of the Gorbi Runtime
+Library and Gorbi Standard Library grant you permission to use,
+compile, link, and distribute software that uses these libraries
+without causing the resulting work to be subject to the GNU General
+Public License.
+
+You may create and distribute applications, executables, shared
+libraries, static binaries, plugins, services, and other software
+that use the Gorbi Runtime Library or Gorbi Standard Library under
+terms of your choice, including proprietary, commercial,
+closed-source, and non-GPL licenses.
+
+Importing modules from the Gorbi Standard Library, linking against
+the Gorbi Runtime Library, or compiling software using the Gorbi
+Compiler does not by itself require the resulting work to be
+licensed under the GNU General Public License.
+
+This exception applies only to software that uses the Gorbi Runtime
+Library or Gorbi Standard Library.
+
+Any modifications to the Gorbi Runtime Library or Gorbi Standard
+Library themselves remain covered by the GNU General Public License
+and must be distributed under GPL terms when required by that
+license.
+
+This exception does not apply to the Gorbi Compiler, Toolchain,
+Package Manager, Build System, Language Server, IDE Extensions,
+Developer Tools, or any other Gorbi Project component unless
+explicitly stated otherwise.
+
+Persons who modify the Runtime Library or Standard Library may
+extend this exception to their modified versions but are not
+required to do so. If they choose not to do so, this exception
+must be removed from their modified version.
+
+This exception shall be treated as an additional permission under
+Section 7 of the GNU General Public License Version 3.
