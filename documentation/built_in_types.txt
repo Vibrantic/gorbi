@@ -5,35 +5,31 @@ wholeNumber = 32                        #Immutable(Constant) automatically signe
 ~wholeNumber = 32                       #Mutable(Variable/changeable) automatically signed and automatic 64bits type assigment to Integer
 
 # Explicit signed/unsigned and type definition but automatic bits assigment
-wholeNumber: sint = 32                  #Immutable(Constant) signed 64bits Integer Value
-~wholeNumber: sint = 32                 #Mutable(Variable/changeable) signed 64bits Integer Value
+wholeNumber: int = 32                  #Immutable(Constant) signed 64bits Integer Value
+~wholeNumber: int = 32                 #Mutable(Variable/changeable) signed 64bits Integer Value
 wholeNumber: uint = 32                  #Immutable(Constant) unsigned 64bits Integer Value
 ~wholeNumber: uint = 32                 #Mutable(Variable/changeable) unsigned 64bits Integer Value
 
-# Explicit type assigment and automatic bits recognition
-wholeNumber: int = 32                   #Immutable(Constant) automatically signed and explicit type assigment to integer
-~wholeNumber: int = 32                  #Mutable(Variable/changeable) automatically signed and explicit type assigment to integer
-
 # Explicit immutable signed type assigment
-wholeNumber: sint4 = 32                 #Immutable(Constant) signed 4bits Integer Value
-wholeNumber: sint8 = 32                 #Immutable(Constant) signed 8bits Integer Value
-wholeNumber: sint16 = 32                #Immutable(Constant) signed 16bits Integer Value
-wholeNumber: sint32 = 32                #Immutable(Constant) signed 32bits Integer Value
-wholeNumber: sint64 = 32                #Immutable(Constant) signed 64bits Integer Value
-wholeNumber: sint128 = 32               #Immutable(Constant) signed 64bits Integer Value
+wholeNumber: int4 = 32                 #Immutable(Constant) signed 4bits Integer Value
+wholeNumber: int8 = 32                 #Immutable(Constant) signed 8bits Integer Value
+wholeNumber: int16 = 32                #Immutable(Constant) signed 16bits Integer Value
+wholeNumber: int32 = 32                #Immutable(Constant) signed 32bits Integer Value
+wholeNumber: int64 = 32                #Immutable(Constant) signed 64bits Integer Value
+wholeNumber: int128 = 32               #Immutable(Constant) signed 64bits Integer Value
 
 # Explicit mutable signed type assigment
-~wholeNumber: sint4 = 32                #Mutable(Variable/changeable) signed 4bits Integer Value
-~wholeNumber: sint8 = 32                #Mutable(Variable/changeable) signed 8bits Integer Value
-~wholeNumber: sint16 = 32               #Mutable(Variable/changeable) signed 16bits Integer Value
-~wholeNumber: sint32 = 32               #Mutable(Variable/changeable) signed 32bits Integer Value
-~wholeNumber: sint64 = 32               #Mutable(Variable/changeable) signed 64bits Integer Value
-~wholeNumber: sint128 = 32              #Mutable(Variable/changeable) signed 64bits Integer Value
+~wholeNumber: int4 = 32                #Mutable(Variable/changeable) signed 4bits Integer Value
+~wholeNumber: int8 = 32                #Mutable(Variable/changeable) signed 8bits Integer Value
+~wholeNumber: int16 = 32               #Mutable(Variable/changeable) signed 16bits Integer Value
+~wholeNumber: int32 = 32               #Mutable(Variable/changeable) signed 32bits Integer Value
+~wholeNumber: int64 = 32               #Mutable(Variable/changeable) signed 64bits Integer Value
+~wholeNumber: int128 = 32              #Mutable(Variable/changeable) signed 64bits Integer Value
 
 # Explicit immutable unsigned type assigment
 wholeNumber: uint4 = 32                 #Immutable(Constant) unsigned 4bits Integer Value
 wholeNumber: uint8 = 32                 #Immutable(Constant) unsigned 8bits Integer Value
-wholeNumber: uint6 = 32                 #Immutable(Constant) unsigned 16bits Integer Value
+wholeNumber: uint16 = 32                 #Immutable(Constant) unsigned 16bits Integer Value
 wholeNumber: uint32 = 32                #Immutable(Constant) unsigned 32bits Integer Value
 wholeNumber: uint64 = 32                #Immutable(Constant) unsigned 64bits Integer Value
 wholeNumber: uint128 = 32               #Immutable(Constant) unsigned 64bits Integer Value
@@ -68,7 +64,7 @@ decimalNumber: float64 = 4.58           #Immutable(Constant) 64bits Float Value
 ----------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------
 
-/* Words/Strings */
+/* Word/String */
 ----------------------------------------------------------------------------------------------------------------------
 #Automatic type recognition for signed and unsigned strings
 word = "Bob"                            #Immutable(Constant) 64bits String
@@ -77,14 +73,6 @@ word = "Bob"                            #Immutable(Constant) 64bits String
 # Explicit type assigment
 word: str = "Bob"                       #Immutable(Constant) 64bits type assigment to string
 ~word: str = "Bob"                      #Mutable(Variable/changeable) 64bits type assigment to string
-
-# Explicit immutable type size assigment
-word: str32 = "Bob"                     #Immutable(Constant) 32bits String
-word: str64 = "Bob"                     #Immutable(Constant) 64bits String
-
-# Explicit mutable type size assigment
-~word: str32 = "Bob"                    #Mutable(Variable/changeable) 32bits String
-~word: str64 = "Bob"                    #Mutable(Variable/changeable) 64bits String
 
 ----------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------
@@ -103,15 +91,11 @@ character: char = 'A'                   #Immutable(Constant) 64bits type assigme
 character: char8 = 'A'                  #Immutable(Constant) 8bits Character
 character: char16 = 'A'                 #Immutable(Constant) 16bits Character
 character: char32 = 'A'                 #Immutable(Constant) 32bits Character
-character: char64 = 'A'                 #Immutable(Constant) 64bits Character
-character: char128 = 'A'                #Mutable(Variable/changeable) 64bits Character
 
 # Explicit mutable type size assigment
 ~character: char8 = 'A'                 #Mutable(Variable/changeable) 32bits Character
 ~character: char16 = 'A'                #Mutable(Variable/changeable) 32bits Character
 ~character: char32 = 'A'                #Mutable(Variable/changeable) 32bits Character
-~character: char64 = 'A'                #Mutable(Variable/changeable) 64bits Character
-~character: char128 = 'A'               #Mutable(Variable/changeable) 64bits Character
 
 ----------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------
@@ -126,17 +110,125 @@ stateCheck1: bool = true or false       #Immutable(Constant) type assigment to b
 ~stateCheck1: bool = true or false      #Mutable(Variable/changeable) type assigment to boolean
 
 # Explicit immutable type assigment
-stateCheck1: bbool1 = 0 or 1            #Immutable(Constant) 1bit Boolean
+stateCheck1: bit = 0 or 1               #Immutable(Constant) 1bit Boolean
 stateCheck1: bool8 = true or false      #Immutable(Constant) 8bits Boolean
 stateCheck1: bool16 = true or false     #Immutable(Constant) 16bits Boolean
 stateCheck1: bool32 = true or false     #Immutable(Constant) 32bits Boolean
 stateCheck1: bool64 = true or false     #Immutable(Constant) 64bits Boolean
 
 # Explicit mutable type assigment
-~stateCheck1: bbool1 = 0 or 1           #Mutable(Variable/changeable) 1bit Boolean
+~stateCheck1: bit = 0 or 1              #Mutable(Variable/changeable) 1bit Boolean
 ~stateCheck1: bool8 = true or false     #Mutable(Variable/changeable) 8bits Boolean
 ~stateCheck1: bool16 = true or false    #Mutable(Variable/changeable) 16bits Boolean
 ~stateCheck1: bool32 = true or false    #Mutable(Variable/changeable) 32bits Boolean
 ~stateCheck1: bool64 = true or false    #Mutable(Variable/changeable) 64bits Boolean
+----------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
+
+/* Pointer */
+----------------------------------------------------------------------------------------------------------------------
+In order to keep the code safe everything is "locked". So in order to be able to use pointers one have to declare
+the code "unlock(what?)".
+
+There are multiple unlocks.
+    Now:
+        pointers
+        raw_pointers
+        memory
+        casting
+        arithmetic
+        bounds
+        threads
+        ffi
+
+    Later:
+        pointer_arithmetic,
+        transmute
+        reflection
+        filesystem
+        network
+        kernel
+
+unlock(pointers, memory, arithmetic){
+    ~x = 42                             #Mutable(Variable/changeable) 64bits Integer
+    ptr: *i64 = &~x                     #Point to the memory address of ~x (declaration)
+    ptr* = ~x + 72                      #Write the value 100 to ptr (write)
+    ~x = ptr*                           #Set the value of ~x with ptr (read)
+}
+
+----------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
+
+/* Functions */
+----------------------------------------------------------------------------------------------------------------------
+
+fn add(a: i32, b: i32) -> i32?
+    ~c = a + b
+
+Let's deconstruct this function.
+
+fn      - Declares a function.
+add     - Function name.
+()      - Function parameters.
+a: i32  - Immutable 32-bit signed integer.
+b: i32  - Immutable 32-bit signed integer.
+->      - Declares the return type.
+i32     - Returns a 32-bit signed integer.
+?       - Error propagation suffix. Indicates that the function may return an error and allows nested errors to bubble up safely.
+~c      - Mutable local variable.
++       - Addition operator.
+
+----------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
+
+/* Loop */
+----------------------------------------------------------------------------------------------------------------------
+#Unconditional loop statements
+loop 10
+    ~c++
+
+#Conditional while loop statements
+while(~a < b)
+    print("WHILE")
+    ~a++
+
+#Conditional loop statements
+loop(i = 0, ~a < b, i++)
+    ~a++
+
+----------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
+
+/* Branching */
+----------------------------------------------------------------------------------------------------------------------
+
+#Check statement Action-Driven
+if ~c == y
+    "code"
+    ret value (ret immediately exits the current function.)
+elif ~c == x
+    "code"
+    ret value (ret immediately exits the current function.)
+else
+    "code"
+    ret value (ret immediately exits the current function.)
+
+#Check statement Case-Driven
+case ~c
+    0:
+        "code"
+        ret value (ret immediately exits the current function.)
+
+    1:
+        "code"
+        ret value (ret immediately exits the current function.)
+
+    2:
+        "code"
+        ret value (ret immediately exits the current function.)
+
+    default:
+        ret value (ret immediately exits the current function.)
+
 ----------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------
