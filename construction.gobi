@@ -3,6 +3,15 @@ a: i32 = 2
 b: i32 = 5
 ~c: i32
 
-fn calculate(a: i32, b: i32) -> i32
+fn calculate(a: i32, b: i32) -> i32?
     ~c = a + b
 
+# Action-Driven
+when =
+    ~c == y -> fn(arg)
+then
+    ~c == x -> fn(arg)
+
+# Value-Driven
+~c = when
+    x > y -> fn(arg)
