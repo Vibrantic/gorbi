@@ -7,8 +7,8 @@ wholeNumber = 32                        #Immutable(Constant) automatically signe
 # Explicit signed/unsigned and type definition but automatic bits assigment
 wholeNumber: int = 32                  #Immutable(Constant) signed 64bits Integer Value
 ~wholeNumber: int = 32                 #Mutable(Variable/changeable) signed 64bits Integer Value
-wholeNumber: uint = 32                  #Immutable(Constant) unsigned 64bits Integer Value
-~wholeNumber: uint = 32                 #Mutable(Variable/changeable) unsigned 64bits Integer Value
+wholeNumber: uint = 32                 #Immutable(Constant) unsigned 64bits Integer Value
+~wholeNumber: uint = 32                #Mutable(Variable/changeable) unsigned 64bits Integer Value
 
 # Explicit immutable signed type assigment
 wholeNumber: int4 = 32                 #Immutable(Constant) signed 4bits Integer Value
@@ -29,7 +29,7 @@ wholeNumber: int128 = 32               #Immutable(Constant) signed 64bits Intege
 # Explicit immutable unsigned type assigment
 wholeNumber: uint4 = 32                 #Immutable(Constant) unsigned 4bits Integer Value
 wholeNumber: uint8 = 32                 #Immutable(Constant) unsigned 8bits Integer Value
-wholeNumber: uint16 = 32                 #Immutable(Constant) unsigned 16bits Integer Value
+wholeNumber: uint16 = 32                #Immutable(Constant) unsigned 16bits Integer Value
 wholeNumber: uint32 = 32                #Immutable(Constant) unsigned 32bits Integer Value
 wholeNumber: uint64 = 32                #Immutable(Constant) unsigned 64bits Integer Value
 wholeNumber: uint128 = 32               #Immutable(Constant) unsigned 64bits Integer Value
@@ -103,7 +103,7 @@ character: char32 = 'A'                 #Immutable(Constant) 32bits Character
 /* Check statement boolean */
 ----------------------------------------------------------------------------------------------------------------------
 stateCheck1 = true or false             #Immutable(Constant) 8bits Boolean
-~stateCheck1 = true or false            #Mutable(Variable) 8bits Boolean
+~stateCheck1 = true or false            #Mutable(Variable/changeable) 8bits Boolean
 
 # Explicit type assigment
 stateCheck1: bool = true or false       #Immutable(Constant) type assigment to boolean
